@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file(var.credentials_file)
+  credentials = var.credentials
 }
 
 module "vpc" {
@@ -16,3 +16,4 @@ module "vpc" {
   region  = var.region
   name    = var.name
 }
+  
