@@ -1,20 +1,20 @@
 variable "project" {
-  default = "coastal-dynamo-317617"
+  default = var.project
 }
 
 variable "credentials_file" {
-  default = "coastal-dynamo-317617-470504d3bd7c.json"
+  default = var.credentials
 }
 
 variable "region" {
-  default = "australia-southeast1"
+  default = var.region
 }
 
 variable "name" {
-  default = "task1"
+  default = variable.name
 }
 variable "zone" {
-  default = "australia-southeast1-a"
+  default = var.zone
 }
 variable "public_subnet_cidr" {
   default = "10.10.5.0/24"
